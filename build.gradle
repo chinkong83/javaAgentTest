@@ -1,0 +1,16 @@
+group 'com.yahoo.ec.parsec'
+version '1.0.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+jar.manifest {
+    attributes("Manifest-Version": "1.0", "Premain-Class": "com.yahoo.ec.parsec.TestAgent")
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
